@@ -34,7 +34,7 @@ It allows users to enter tasks, add them to a dynamic list, and remove them with
 
 📂 Clone this repository:
 
-git clone https://github.com/<your-username>/lwc-todo-list
+git clone (https://github.com/k-vasantharaj/lwc-todo-list-template-looping)
 
 
 🚀 Deploy to your Salesforce Org using SFDX or VS Code.

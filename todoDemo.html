@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="To-Do List">
+        <div >
+            <template lwc:if={isToDoListAvl}>
+           <template for:each={toDoList} for:item="task">
+            <div key={task.id} class="slds-grid slds-align_absolute-center slds-m-around_large tasks">
+                   <div class="slds-col slds-p-around_medium slds-align_absolute-center" >
+                     {task.taskName}
+                   </div>
+                   <div class="slds-col slds-p-around_medium slds-align_absolute-center">
+                     <lightning-icon  name={task.id} icon-name="utility:delete" variant="container" onclick={handleRemoveTask}></lightning-icon>
+                   </div>
+            </div>
+        </template>
+        </template>
+        <template lwc:else>
+            <p class="slds-align_absolute-center slds-p-around_medium slds-m-around_large noArrayText">You have no tasks</p>
+        </template>
+        </div>
+        <div class="slds-align_absolute-center slds-p-around_small inputStyle">
+            <lightning-input label="Enter new Task" value={newTask} onchange={handleTaskChange}></lightning-input>
+        </div>
+        <div class="slds-align_absolute-center slds-p-around_small ">
+            <lightning-button label="Add" variant="brand" onclick={handleAddClick}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

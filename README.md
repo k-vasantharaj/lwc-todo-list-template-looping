@@ -66,3 +66,11 @@ Task: Finish Salesforce LWC Module
 
 Output:
 ✅ Finish Salesforce LWC Module
+
+🧑‍💻 Author
+
+(https://github.com/k-vasantharaj)
+
+📜 License
+
+This project is licensed under the MIT License.

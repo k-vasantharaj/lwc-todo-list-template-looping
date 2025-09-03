@@ -1,0 +1,16 @@
+.inputStyle{
+    font-size: medium;
+    font-weight: bold;
+}
+.noArrayText{
+    font-size: large;
+    font-weight: bold;
+    color: #0070d2;
+    background-color: lightgray;
+}
+.tasks{
+    font-size: medium;
+    font-weight: bold;
+    color: #0070d2;
+    background-color: lightgray;
+}
